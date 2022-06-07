@@ -4,19 +4,23 @@
     box-sizing: 0;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;400;600;700&family=Oswald&family=Poppins:wght@300;400;600;700&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;500;900&family=Sedgwick+Ave&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,700;9..144,900&family=Kdam+Thmor+Pro&family=Lato:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Mochiy+Pop+P+One&family=Open+Sans:wght@300;400;600;700&family=Oswald:wght@400;500;600&family=Poppins:wght@300;400;600;700&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;500;900&family=Sedgwick+Ave&display=swap');
+
 html{
     scroll-behavior: smooth;
 }
 
 body{
-    background-color: #f2f2f2;
+    background-image: linear-gradient(to right, #0d0d0d 0%, black 100%);
 }
 
 .container{
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
-    
+    position: relative;
 }
 
 .header{
@@ -25,6 +29,8 @@ body{
     align-items: center;
     background: rgb(0, 0, 0, .5);
     padding: 10px 20px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: solid 3px #fff;
 }
 
 .logo{
@@ -33,15 +39,19 @@ body{
 }
 .iot{
     font-weight: bold;
-    color: white;
+    color: red;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5rem;
+
 }
 .ech{
     color: white;
+    font-size: 2.2rem;
 }
 
 .nav{
     width: 50%;
-    min-width: 350px;
+    min-width: 440px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,14 +65,17 @@ body{
     font-weight: bold;
     margin: 0px 10px;
     text-align: center;
+    transition: color .1s ease;
 }
 .nav__opcion:hover{
-    text-decoration: underline solid 2px white;
+    /* text-decoration: underline solid 3px white; */
+    color: red;
 }
 
 .nav__opcion-inicio{
     display: none;
 }
+
 
 .menu{
     border: solid 1px black;
@@ -90,11 +103,17 @@ body{
     justify-content: center;
     padding: 30px 20px;
     background-color: rgb(47, 44, 44);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%),url(/img/showcase/nasa-Q1p7bh3SHj8-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .showcase__frase{
     margin-top: 120px;
     text-align: center;
+    color: #fff;
 }
 
 .showcase__contenedor-imagenes{
@@ -158,7 +177,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(60, 48, 48);
+    background: rgba(0, 0, 0, 1);
 }
 
 .servicio__contenedor{
@@ -171,11 +190,14 @@ body{
 }
 
 .servicio__contenedor-imagen{
-    background: #fff;
+    background-image: url(/img/servicios/undraw_feeling_proud_qne1.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 .servicio__contenedor-items{
-    background: #fff;
+    background: inherit;
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -188,30 +210,41 @@ body{
 
 .servicio_texto{
     margin-left: 5px;
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
 }
 
 .numero{
     width: 19px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    padding: 2px;
     border-radius: 50%;
     text-align: center;
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    color: #fff;
+    box-shadow: -1px 1px 3px 2px rgb(0, 0, 0, .5);
 }
 
 /*TECNOLOGIAS*/
 .tecnologias{
-    height: 100vh;
-    background: rgb(92, 71, 71);
+    height: 90vh;
+    background: rgb(27, 38, 49);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 50px;
+    color: #fff;
+    font-size: 2.2rem;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%),url(/img/tecnologias/fondo/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .contenedor_tecnologias{
-    
     height: fit-content;
-    background: #000;
+    /* background: inherit; */
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: auto;
@@ -223,16 +256,37 @@ body{
 }
 
 .tecnologia{
-    background: #fff;
+    background: inherit;
     width: 150px;
     height: 150px;
     min-width: 128px;
     min-height: 120px;
     cursor: pointer;
+    background-image: url(/img/tecnologias/bxl-c-plus-plus.svg);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 .tecnologia:hover{
     transform: scale(1.1);
     box-shadow: -2px 2px 15px 10px rgb(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+}
+
+.tecnologia-2{
+    background-image: url(/img/tecnologias/bxl-flutter.svg);
+}
+.tecnologia-3{
+    background-image: url(/img/tecnologias/bxl-firebase.svg);
+}
+.tecnologia-4{
+    background-image: url(/img/tecnologias/bxl-html5.svg);
+}
+.tecnologia-5{
+    background-image: url(/img/tecnologias/bxl-css3.svg);
+}
+.tecnologia-6{
+    background-image: url(/img/tecnologias/bxl-javascript.svg);
 }
 
 /*FOOTER*/
@@ -371,6 +425,8 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: #2f2e2e67;
+        border: none;
         
     }
 
@@ -384,15 +440,19 @@ body{
         justify-content: space-evenly;
         background-color: rgb(0, 0, 0, .8);
         z-index: 50;
-        font-size: 2.2rem;
+        font-size: 1.5rem;
         transform: translate(110%);
         transition: transform .4s ease;
         border-left: solid 2px #fff;
+        backdrop-filter: blur(5px);
     }
     .nav-translate{
         transform: translate(0%);
     }
 
+    .showcase__frase{
+        margin-top: 100px;
+    }
     
     .servicio__contenedor{
         grid-template-columns: repeat(1, 1fr);
@@ -405,7 +465,17 @@ body{
 }
 
 @media screen and (max-width:540px){
+    .nav{
+        font-size: 1.5rem;
+    }
     .contenedor_tecnologias{
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media screen and (max-width:400px){
+    .nav{
+        font-size: 1.2rem;
+    }
+    
 }
