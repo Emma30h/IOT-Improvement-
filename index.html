@@ -14,7 +14,7 @@
             <div class="logo"><p class="iot">IOT</p><p class="ech">ech.</p></div>
             <nav class="nav" id="nav">
                 <a href="#showcase" class="nav__opcion nav__opcion-inicio">INICIO</a>
-                <a href="#sobre-nosotros" class="nav__opcion">SOBRE NOSOTROS</a>
+                <a href="#sobre-nosotros" class="nav__opcion">NOSOTROS</a>
                 <a href="#tecnologias" class="nav__opcion">TECNOLOGIAS</a>
                 <a href="#contacto" class="nav__opcion">CONTACTO</a>
             </nav>
@@ -56,7 +56,19 @@
                     <div class="tecnologia tecnologia-6"></div>
                 </section>
             </section>
-            <section class="contacto" id="contacto"></section>
+            <section class="contacto" id="contacto">
+                <form class="form"  action="https://formspree.io/f/xayvkeqb"
+                method="POST">
+                    <div class="form__container">
+                        <h2 class="form__title">Contactame</h2>
+                        <input type="text" class="form__input" placeholder="Nombre" name="name">
+                        <input type="email" class="form__input" placeholder="E-mail" name="email">
+                        <textarea class="form__input form__input--message" placeholder="Mensaje:" name="message"></textarea>
+            
+                        <input type="submit" value="Enviar" class="form__cta">
+                    </div>
+                </form>     
+            </section>
         </main>     
         <footer class="footer">
             <div class="footer__container">
