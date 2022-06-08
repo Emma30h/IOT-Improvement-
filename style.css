@@ -173,7 +173,7 @@ body{
 
 /*SERVICIOS*/
 .servicios{
-    height: 90vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -225,6 +225,50 @@ body{
     box-shadow: -1px 1px 3px 2px rgb(0, 0, 0, .5);
 }
 
+/*MAPA*/
+.ubicacion{
+    height: 100vh;
+    background: #000;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%),url(/img/ubicacion/revolt-6V2vCZ2hYtY-unsplash.jpg);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+}
+
+.mapa__container{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.ubicacion__titulo{
+    color: red;
+    margin-left: 50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.2rem;
+    padding-top: 30px;
+}
+
+.cacion{
+    color: white;
+}
+
+.icono-ubicacion{
+    background-image: url(/img/ubicacion/icono-ubicacion.svg);
+    background-position: center;
+    background-size: cover;
+    width: 30px;
+    height: 40px;
+}
+
 /*TECNOLOGIAS*/
 .tecnologias{
     height: 100vh;
@@ -236,10 +280,19 @@ body{
     gap: 50px;
     color: #fff;
     font-size: 2.2rem;
+    font-family: 'Roboto', sans-serif;
     background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%),url(/img/tecnologias/fondo/ales-nesetril-Im7lZjxeLhg-unsplash.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.tecnologia__title{
+    display: flex;
+}
+
+.tecnologia__title p{
+    color: red;
 }
 
 .contenedor_tecnologias{
@@ -413,7 +466,8 @@ body{
 }
 
 .form{
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.566);
+    backdrop-filter: blur(5px);
     width: 90%;
     margin: auto;
     max-width: 400px;
@@ -533,6 +587,11 @@ body{
         grid-template-rows: auto;
     }
     
+    .tecnologia{
+        width: 140px;
+        height: 140px;
+    }
+
     .contenedor_tecnologias{
         grid-template-columns: repeat(3, 1fr);
     }
@@ -542,14 +601,25 @@ body{
     .nav{
         font-size: 1.5rem;
     }
+    .tecnologia{
+        width: 120px;
+        height: 120px;
+    }
     .contenedor_tecnologias{
         grid-template-columns: repeat(2, 1fr);
+    }
+    .tecnologias{
+        font-size: 2rem;
     }
 }
 
 @media screen and (max-width:400px){
     .nav{
         font-size: 1.2rem;
+    }
+    .tecnologia{
+        width: 120px;
+        height: 120px;
     }
     
 }
