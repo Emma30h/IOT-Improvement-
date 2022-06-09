@@ -215,6 +215,8 @@ body{
 }
 
 .numero{
+    min-width: 19px;
+    min-height: 19px;
     width: 19px;
     /* border: 1px solid black; */
     padding: 2px;
@@ -269,6 +271,10 @@ body{
     height: 40px;
 }
 
+.mapa{
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, .5);
+}
+
 /*TECNOLOGIAS*/
 .tecnologias{
     height: 100vh;
@@ -310,8 +316,8 @@ body{
 
 .tecnologia{
     background: inherit;
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     min-width: 128px;
     min-height: 120px;
     cursor: pointer;
@@ -342,40 +348,7 @@ body{
     background-image: url(/img/tecnologias/bxl-javascript.svg);
 }
 
-/*FOOTER*/
-.footer{
-   padding: 40px;
-    height: 50vh;
-    background: rgb(37, 6, 6);
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    
-}
 
-.logo-container{
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    
-}
-
-.logo-footer{
-    display: flex;
-    flex-direction: row;
-    font-size: 3.5rem;
-    color: #fff;
-}
-
-.iot-footer{
-    font-weight: bold;
-    font-size: 4rem;
-}
-
-.frase-footer{
-    color: #fff;
-    font-size: 1.4rem;
 }
 
 /*LOADER*/
@@ -473,6 +446,8 @@ body{
     max-width: 400px;
     border-radius: 1em;
     padding: 3.5em 1.5em;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
+
 }
 
 .form__container{
@@ -524,6 +499,180 @@ body{
     .form{
         padding: 3.5em 1em;
     }
+}
+
+/*FOOTER*/
+.footer{
+    height: 50vh;
+    border-top: 3px solid rgb(242, 242, 242, .6);
+}
+
+.footer__container{
+    background: rgb(35, 25, 25);
+    background: rgb(167, 2, 2);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+}
+
+.footer__container-logo{
+    /* background: #17202A; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.footer__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.9rem;
+    color: #fff;
+}
+.footer__iot{
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+.footer__frase{
+    color: #fff;
+}
+
+.footer__info{
+    background: #0b1c2f;
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .8) 0%, rgba(0, 0, 0, .8) 100%),url(/img/footer-iconos/fotis-fotopoulos-DuHKoV44prg-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(15px);
+}
+
+
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.footer__container-contacto{
+    width: 50%;
+    height: 20px;
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.icono-contacto{
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/footer-iconos/mail.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-contacto{
+    color: #fff;
+}
+
+.icono-contacto-whatsapp{
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/footer-iconos/whatsapp.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.icono-contacto-facebook{
+    min-width: 20px;
+    width: 20px;
+    height: 20px;
+    background-image: url(/img/footer-iconos/facebook.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.texto-contacto a{
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+
+@media screen and (max-width:690px){
+    .footer__container{
+        grid-template-rows: 75% 25%;
+        grid-template-columns: auto;
+    }
+    .footer__info{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 5px;
+    }
+    .footer__container-contacto{
+        text-align: center;
+        width: fit-content;
+        min-width: fit-content;
+    }
+}
+
+@media screen and (max-width:490px){
+    .footer__container-contacto{
+        font-size: 10px;
+        align-items: center;
+        gap: 3px;
+    }
+}
+
+
+@media screen and (max-width:685px){
+    .footer__container{
+        grid-template-rows: 60% 40%;
+        grid-template-columns: auto;
+    }
+    .footer__info{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 30%;
+    }
+}
+
+@media screen and (max-width:430px){
+    .footer__container{
+        grid-template-rows: 70% 35%;
+    }
+    .footer__info{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-left: 30%;
+    }
+}
+
+.footer__texto-company{
+    max-height: 5vh;
+    height: 10vh;
+    text-align: center;
+    padding: 8px 0;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: .7rem;
+    margin-top: 40px;
+}
+.footer__texto-company p:hover{
+    color: rgba(255, 255, 255, 0.511);
 }
 
 
