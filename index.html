@@ -35,13 +35,13 @@
                     <article class="servicio__contenedor-imagen"><img class="servicio__imagen" src="" alt=""></article>
                     <article class="servicio__contenedor-items">
                         <div class="contenedor_texto">
-                            <p class="numero">1</p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
+                            <p class="numero"></p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="contenedor_texto">
-                           <p class="numero">2</p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
+                           <p class="numero"></p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
                         </div>
                         <div class="contenedor_texto">
-                            <p class="numero">3</p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
+                            <p class="numero"></p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
                         </div>
                     </article>
                 </div>
@@ -69,11 +69,16 @@
                 method="POST">
                     <div class="form__container">
                         <h2 class="form__title">Contactame</h2>
-                        <input type="text" class="form__input" placeholder="Nombre" name="name">
-                        <input type="email" class="form__input" placeholder="E-mail" name="email">
-                        <textarea class="form__input form__input--message" placeholder="Mensaje:" name="message"></textarea>
-            
-                        <input type="submit" value="Enviar" class="form__cta">
+                        <input type="text" class="form__input form__input-nombre" placeholder="Nombre" name="name" required>
+                        <input type="email" class="form__input form__input-mail" placeholder="E-mail" name="email" required>
+                        <textarea class="form__input form__input--message" placeholder="Mensaje:" name="message" required></textarea>
+                        <button 
+                            type="submit" class="button" id="button">
+                                <span class="button__texto">Enviar</span>
+                        </button>
+                        <script src="button.js"></script>
+                        <!-- <input type="submit" value="Enviar" class="form__cta"> -->
+                        
                     </div>
                 </form>     
             </section>
@@ -89,11 +94,19 @@
                 <div class="footer__info">
                     <div class="footer__container-contacto">
                         <div class="icono-contacto"></div>
-                        <p class="texto-contacto">emanel@iotech.com.br</p>
+                        <p class="texto-contacto">alejandro@iotech.com.br</p>
+                    </div>
+                    <div class="footer__container-contacto footer__container-contacto-2">
+                        <div class="icono-contacto"></div>
+                        <p class="texto-contacto">emanuel@iotech.com.br</p>
                     </div>
                     <div class="footer__container-contacto">
                         <div class="icono-contacto-whatsapp"></div>
-                        <p class="texto-contacto">+55 54 9693-3976</p>
+                        <p class="texto-contacto">+55 54 9693-3976(BR)</p>
+                    </div>
+                    <div class="footer__container-contacto">
+                        <div class="icono-contacto-whatsapp"></div>
+                        <p class="texto-contacto">+54 9 3542 46-1287(AR)</p>
                     </div>
                     <div class="footer__container-contacto">
                         <div class="icono-contacto-facebook"></div>
