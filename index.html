@@ -23,12 +23,22 @@
         </header>
         <main>
             <section class="showcase" id="showcase">
-                <h1 class="showcase__frase">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit, autem!</h1>
+                <h1 class="showcase__frase"><span class="typed"></span></h1>
+                <div class="titulo" id="cadenas-texto">
+                    <p>Programamos<i class="beneficios"> tus necesidades.</i></p>
+                    <p>Programamos <i class="beneficios">tus ganas de progresar.</i></p>
+                    <p>Tranquilo, <br> <i class="beneficios">nosotros lo programamos!</i></p>
+                </div>
                 <article class="showcase__contenedor-imagenes">
-                    <div class="showcase-imagen showcase__imagen-1"></div>
-                    <div class="showcase-imagen showcase__imagen-2"></div>
-                    <div class="showcase-imagen showcase__imagen-3"></div>
-                </article>
+                    <div class="showcase-imagen showcase__imagen-1" id="showcase-imagen-1"></div>
+                    <div class="showcase-imagen showcase__imagen-2" id="showcase-imagen-2"></div>
+                    <div class="showcase-imagen showcase__imagen-3" id="showcase-imagen-3"></div>
+                </article>       
+                <!-- <div class="light-box">
+                    <div class="close__light-box"></div>
+                    <div class="contenedor__light-box">
+                    </div>
+                </div> -->
             </section>
             <section class="servicios" id="sobre-nosotros">
                 <div class="servicio__contenedor">
@@ -56,12 +66,12 @@
             <section class="tecnologias" id="tecnologias">
                 <h1 class="tecnologia__title"><p>Tec</p>nologias</h1>
                 <section class="contenedor_tecnologias">
-                    <div class="tecnologia"></div>
-                    <div class="tecnologia tecnologia-2"></div>
-                    <div class="tecnologia tecnologia-3"></div>
-                    <div class="tecnologia tecnologia-4"></div>
-                    <div class="tecnologia tecnologia-5"></div>
-                    <div class="tecnologia tecnologia-6"></div>
+                    <div class="tecnologia" title="C++"></div>
+                    <div class="tecnologia tecnologia-2" title="Flutter"></div>
+                    <div class="tecnologia tecnologia-3" title="FireBase"></div>
+                    <div class="tecnologia tecnologia-4" title="HTML"></div>
+                    <div class="tecnologia tecnologia-5" title="CSS"></div>
+                    <div class="tecnologia tecnologia-6" title="JavaScript"></div>
                 </section>
             </section>
             <section class="contacto" id="contacto">
@@ -115,6 +125,8 @@
             <p>&copy; <b>IOTech</b> 2022. Todos los derechos reservados</p>
         </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="textoEfecto.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
