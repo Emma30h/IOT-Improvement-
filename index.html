@@ -11,58 +11,68 @@
     <div class="lds-ring loader" id="loader"><div></div><div></div><div></div><div></div></div>
     <div class="container">
         <header class="header">
-            <div class="logo"><p class="iot">IOT</p><p class="ech">ech</p></div>
+            <div class="container__logo">
+                <div class="logo"><p class="iot">IOT</p><p class="ech">ech</p></div>
+                <p class="logo__frase">Internet das coisas</p>
+            </div>
             <nav class="nav" id="nav">
-                <a href="#showcase" class="nav__opcion nav__opcion-inicio">INICIO</a>
-                <a href="#sobre-nosotros" class="nav__opcion">NOSOTROS</a>
-                <a href="#ubicacion" class="nav__opcion">UBICACION</a>
-                <a href="#tecnologias" class="nav__opcion">TECNOLOGIAS</a>
-                <a href="#contacto" class="nav__opcion">CONTACTO</a>
+                <a href="#showcase" class="nav__opcion nav__opcion-inicio">Inicio</a>
+                <a href="#sobre-nosotros" class="nav__opcion">Sobre nós</a>
+                <!-- <a href="#ubicacion" class="nav__opcion">Ubicacion</a> -->
+                <a href="#proyectos" class="nav__opcion">Projetos</a>
+                <a href="#tecnologias" class="nav__opcion">Tecnologias</a>
+                <a href="#contacto" class="nav__opcion">Contato</a>
             </nav>
             <div class="menu" id="menu"></div>
         </header>
         <main>
             <section class="showcase" id="showcase">
-                <h1 class="showcase__frase"><span class="typed"></span></h1>
+                <h1 class="showcase__frase" style="height: 50px; font-family: 'Roboto', sans-serif;"><span class="typed"></span></h1>
                 <div class="titulo" id="cadenas-texto">
-                    <p>Programamos<i class="beneficios"> tus necesidades.</i></p>
-                    <p>Programamos <i class="beneficios">tus ganas de progresar.</i></p>
-                    <p>Tranquilo, <br> <i class="beneficios">nosotros lo programamos!</i></p>
+                    <p>Projetamos<b class="beneficios" style="color: red;"> suas necesidades.</b></p>
+                    <p>Nos Ajudamos<b class="beneficios" style="color: red";> você a crescer.</b></p>
+                    <!-- <p>Tranquilo, <br> <b class="beneficios" style="color: red;">nosotros lo programamos!</b></p> -->
                 </div>
                 <article class="showcase__contenedor-imagenes">
-                    <div class="showcase-imagen showcase__imagen-1" id="showcase-imagen-1"></div>
-                    <div class="showcase-imagen showcase__imagen-2" id="showcase-imagen-2"></div>
-                    <div class="showcase-imagen showcase__imagen-3" id="showcase-imagen-3"></div>
+                    <div class="showcase-imagen showcase__imagen-1" id="showcase-imagen-1"><img src="/img/showcase/hidro5r.png" alt=""></div>
+                    <div class="showcase-imagen showcase__imagen-2" id="showcase-imagen-2"><img src="/img/showcase/temp1r.png" alt=""></div>
+                    <div class="showcase-imagen showcase__imagen-3" id="showcase-imagen-3"><img src="/img/showcase/dashboard1.png" alt=""></div>
                 </article>       
-                <!-- <div class="light-box">
-                    <div class="close__light-box"></div>
-                    <div class="contenedor__light-box">
-                    </div>
-                </div> -->
             </section>
             <section class="servicios" id="sobre-nosotros">
-                <div class="servicio__contenedor">
-                    <article class="servicio__contenedor-imagen"><img class="servicio__imagen" src="" alt=""></article>
-                    <article class="servicio__contenedor-items">
-                        <div class="contenedor_texto">
-                            <p class="numero"></p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="contenedor_texto">
-                           <p class="numero"></p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                        <div class="contenedor_texto">
-                            <p class="numero"></p><p class="servicio_texto">Lorem ipsum dolor sit amet.</p>
-                        </div>
-                    </article>
+                <h1 class="servicios__titulo"><span class="sobre">Sobre</span> nós</h1>
+                <div class="servicios__container">
+                    <p>Em nossa sociedade moderna, tudo está conectado: de computadores a carros, telefones, casas e praticamente todos os dispositivos eletrônicos que você    encontra. Todos esses objetos separados estão vinculados por meio da Internet das Coisas (IoT): uma tecnologia mais inteligente torna a vida mais ágil.
+                    </p>
+                    <img src="/img/servicios/undraw_app_installation_re_h36x.svg" alt="">
                 </div>
             </section>
-            <div class="ubicacion" id="ubicacion">
+            <!-- <div class="ubicacion" id="ubicacion">
                 <div class="ubicacion__titulo"><p class="ubi">Ubi</p><p class="cacion">cacion</p><div class="icono-ubicacion"></div></div>
                 <div class="mapa__container">
                                       
                     <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28041.081411213876!2d-52.856390670933244!3d-28.73100892164392!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9502a8249746550d%3A0x4313bdb771a02f03!2sEspumoso%2C%20R%C3%ADo%20Grande%20del%20Sur%2C%20Brasil!5e0!3m2!1ses-419!2sar!4v1654712654219!5m2!1ses-419!2sar" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-            </div>
+            </div> -->
+            <section class="proyectos" id="proyectos">
+                <h1 class="proyectos__titulo"><span class="pro">Pro</span><span class="jetos">jetos</span></h1>
+                <div class="proyectos__container">
+                    <article class="proyectos__imagen-container imagen-1">
+                        <img src="/img/proyectos/hidro3r.png" alt="">
+                    </article>
+                    <article class="proyectos__textos-container texto-1">
+                        <h1>Titulo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt labore, nostrum consectetur nesciunt accusamus a consequatur delectus vero illum aliquid!</p>
+                    </article>
+                    <article class="proyectos__imagen-container imagen-2">
+                        <img src="/img/proyectos/temp5.png" alt="">
+                    </article>
+                    <article class="proyectos__textos-container texto-2">
+                        <h1>Titulo</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt labore, nostrum consectetur nesciunt accusamus a consequatur delectus vero illum aliquid!</p>
+                    </article>
+                </div>
+            </section>
             <section class="tecnologias" id="tecnologias">
                 <h1 class="tecnologia__title"><p>Tec</p>nologias</h1>
                 <section class="contenedor_tecnologias">
@@ -78,10 +88,10 @@
                 <form class="form"  action="https://formspree.io/f/xknyezyk"
                 method="POST">
                     <div class="form__container">
-                        <h2 class="form__title">Contactame</h2>
-                        <input type="text" class="form__input form__input-nombre" placeholder="Nombre" name="name" required>
+                        <h2 class="form__title">Contate-me</h2>
+                        <input type="text" class="form__input form__input-nombre" placeholder="Nome" name="name" required>
                         <input type="email" class="form__input form__input-mail" placeholder="E-mail" name="email" required>
-                        <textarea class="form__input form__input--message" placeholder="Mensaje:" name="message" required></textarea>
+                        <textarea class="form__input form__input--message" placeholder="Mensagem:" name="message" required></textarea>
                         <button 
                             type="submit" class="button" id="button">
                                 <span class="button__texto">Enviar</span>
@@ -99,7 +109,7 @@
                     <div class="container__logo">
                         <div class="footer__logo"><p class="footer__iot">IOT</p><p class="footer__ech">ech</p></div>
                     </div>
-                    <p class="footer__frase">A un codigo de tu bienestar</p>                   
+                    <p class="footer__frase">Internet das coisas</p>                   
                 </div>
                 <div class="footer__info">
                     <div class="footer__container-contacto">
@@ -114,15 +124,15 @@
                         <div class="icono-contacto-whatsapp"></div>
                         <p class="texto-contacto">+54 9 3542 46-1287(AR)</p>
                     </div>
-                    <div class="footer__container-contacto">
+                    <!-- <div class="footer__container-contacto">
                         <div class="icono-contacto-facebook"></div>
                         <p class="texto-contacto"><a href="https://www.facebook.com/alejandro.heredia.144" target="_blank">Alejandro Diego Heredia</a></p>
-                    </div>
+                    </div> -->
                 </div>
             </section>
         </footer class="footer__texto-company">
         <div class="footer__texto-company">
-            <p>&copy; <b>IOTech</b> 2022. Todos los derechos reservados</p>
+            <p>&copy; <b>IOTech</b> 2022. Todos os direitos reservados.</p>
         </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
