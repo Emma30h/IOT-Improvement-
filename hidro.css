@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/hidro-img/pexels-adrienn-1460742.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.atras{
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: fit-content;
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.atras:hover{
+    background: #f2f2f2;
+    color: #000;
+    font-weight: bold;
+}
+
+.container{
+    width: 85%;
+    height: 65vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container h1{
+    margin-top: 18px;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    cursor: pointer;
+}
+
+.hidro__container{
+    width: 900px;
+    height: 400px;
+    display: flex;
+}
+
+.imagen__container{
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.imagen__container img{
+    width: 180px;
+}
+
+.texto__container{
+    min-width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.texto__container ul li{
+    list-style: none;
+    margin: 20px 0px;
+}
+
+.fa-solid{
+    margin-right: 5px;
+    color: rgb(40, 97, 7);
+}
+
+.download{
+    width: 200px;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 50px;
+    right: 20px;
+    display: flex;
+}
+
+.android{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.android img{
+    width: 100%;
+    height: 100%;
+}
+
+.android a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.ios{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.ios img{
+    width: 100%;
+    height: 100%;
+}
+
+.ios a{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:760px) {
+    body{
+        background-position: center center;
+    }    
+    .container{
+        width: 90%;
+    }
+    .container h1{
+        margin-top: 90px;
+    }
+    .atras{
+        font-size: 13px;
+        padding: 6px 12px;
+        top: 5px;
+        left: 8px;
+    }
+    .hidro__container{
+        width: 60%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+    .texto__container{
+        align-items: center;
+        justify-content: center;
+        width: 400px;
+    }
+    .texto__container ul{
+        /* background: rgb(0, 0, 0, .5); */
+        width: 90%;
+        border-radius: 5px;
+        padding: 5px;
+    }
+    .texto__container ul li{
+        margin: 10px 0px;
+        font-size: .9rem;
+    }
+    .imagen__container{
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .imagen__container img{
+        width: 85px;
+    }
+    .download{
+        bottom: 25px;
+        right: 20px;  
+    }
+}
+
+
+

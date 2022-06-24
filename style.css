@@ -112,12 +112,12 @@ body{
     /* width: 100%; */
     display: flex;
     flex-direction: column;
-    gap: 80px;
+    gap: 40px;
     align-items: center;
     justify-content: center;
     padding: 30px 20px;
     /* background-color: rgb(47, 44, 44); */
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .1) 0%, rgba(0, 0, 0, .1) 100%),url(/img/showcase/nasa-Q1p7bh3SHj8-unsplash.jpg);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, .3) 100%),url(/img/showcase/nasa-Q1p7bh3SHj8-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,16 +139,31 @@ body{
 }
 
 .showcase__contenedor-imagenes{
-    width: 85%;
+    width: 700px;
+    height: 300px;
+    background-color: transparent;
     /* height: 300px; */
     /* background: rgba(0, 0, 0, 0.681); */
     display: flex;
     flex-direction: row;
-    gap: 30px;
+    gap: 50px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 53px;
 }
+
+.showcase__contenedor-imagenes img{
+    position: absolute;
+    right: calc(-10%);
+    width: 700px;
+    height: 270px;
+    transition: transform .3s ease;
+}
+/* .showcase__contenedor-imagenes img:hover{
+    transform: scale(1.1);
+} */
 
 .showcase-imagen{
     background-color: transparent;
@@ -253,32 +268,10 @@ body{
 .servicios__container p{
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
-    text-align: center;
+    text-align: left;
     color: #fff;
-    width: 400px;
+    width: 650px;
 }
-
-.servicios__container img{
-    width: 150px;
-    animation: animationServicios 5s ease 3s infinite;
-}
-
-@keyframes animationServicios {
-    0%{
-        transform: rotate(0deg);
-    }
-    33%{
-        transform: rotate(5deg);
-    }
-    66%{
-        transform: rotate(-5deg);
-        
-    }
-    100%{
-        transform: rotate(0deg);
-    }
-}
-
 
 /*MAPA*/
 .ubicacion{
@@ -399,6 +392,15 @@ body{
     color: #fff;
 }
 
+.proyectos__textos-container a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.proyectos__textos-container a:hover{
+    color: red;
+}
+
 .proyectos__imagen-container{
     display: flex;
     align-items: center;
@@ -501,9 +503,6 @@ body{
     background-image: url(/img/tecnologias/bxl-javascript.svg);
 }
 
-
-
-
 /*LOADER*/
 
 .lds-ring {
@@ -584,11 +583,32 @@ body{
     background: #f2f2f2;
     height: 100vh;
     display: flex;
-    background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%),url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    /* background-image: linear-gradient(to top, rgba(0, 0, 0, .5) 0%, rgba(0, 0, 0, .5) 100%),url(/img/contacto/damian-zaleski-RYyr-k3Ysqg-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
     
+}
+
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0, .5);
+    z-index: 5;
+    backdrop-filter: blur(3px);
 }
 
 .form{
@@ -600,7 +620,8 @@ body{
     border-radius: 1em;
     padding: 3.5em 1.5em;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, .5);
-
+    position: absolute;
+    z-index: 10;
 }
 
 .form__container{
@@ -822,6 +843,9 @@ body{
 .texto-contacto:hover{
     color: rgb(167, 2, 2);
 }
+.texto-contacto a:hover{
+    color: rgb(167, 2, 2);
+}
 
 .icono-contacto-whatsapp{
     min-width: 20px;
@@ -870,7 +894,11 @@ body{
 
 /*MEDIA QUERRIES*/
 @media screen and (max-width:1200px){
-   .footer__container-contacto{
+    .servicios__container{
+        height: 80%;
+        overflow: hidden;
+    }
+    .footer__container-contacto{
     width: 70%;
     margin: 20px auto;
     padding-left: calc(20%);
@@ -931,13 +959,27 @@ body{
         transform: translate(0%);
     }
 
+    .showcase__contenedor-imagenes{
+        width: 450px;
+    }
+
+    .showcase__contenedor-imagenes img{
+        width: 500px;
+        height: 200px;
+    }
+
     .showcase__frase{
         margin-top: 100px;
     }
     
     .servicios__container{
         width: 75%;
-        height: 75%;
+        height: 60%;
+        gap: 15px;
+    }
+
+    .servicios__container p{
+        font-size: .8rem;
     }
 
     .servicio__contenedor{
@@ -971,6 +1013,17 @@ body{
     .nav{
         font-size: 1.5rem;
     }
+    .showcase{
+        height: 70vh;
+    }
+    .showcase__contenedor-imagenes{
+        width: 300px;
+        height: 150px;
+    }
+    .showcase__contenedor-imagenes img{
+        width: 300px;
+        height: 120px;
+    }
     .proyectos__imagen-container img{
         width: calc(50%);
         height: calc(70%);
@@ -984,6 +1037,9 @@ body{
     }
     .tecnologias{
         font-size: 2rem;
+    }
+    .form{
+        width: calc(80%);
     }
     .footer__iot{
         font-size: calc(85%);
@@ -1001,8 +1057,16 @@ body{
 }
 
 @media screen and (max-width:490px){
+    .showcase__contenedor-imagenes{
+        width: 250px;
+        height: 130px;
+    }
+    .showcase__contenedor-imagenes img{
+        width: 250px;
+        height: 100px;
+    }
     .proyectos__imagen-container img{
-        width: calc(50%);
+        width: calc(55%);
         height: calc(60%);
     }
     .proyectos__textos-container{
@@ -1036,6 +1100,9 @@ body{
         align-items: center;
         justify-content: space-around;
         transform: translate(10%);
+    }
+    .proyectos__textos-container h1{
+        text-align: center;
     }
     .proyectos__imagen-container img{
         width: calc(55%);
