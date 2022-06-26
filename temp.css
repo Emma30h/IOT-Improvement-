@@ -7,7 +7,6 @@
     box-sizing: border-box;
 }
 
-
 /*LOADER*/
 
 .lds-ring {
@@ -83,10 +82,11 @@
 }
 
 
+
 body{
     width: 100%;
     height: 100vh;
-    background-image: url(/hidro-img/pexels-adrienn-1460742.jpg);
+    background-image:  linear-gradient(to top, rgba(0, 0, 0, .6) 0%, rgba(0, 0, 0, .6) 100%), url(/temp-img/background/pexels-heorhii-heorhiichuk-6632993.jpg);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
@@ -127,6 +127,7 @@ body{
     margin-top: 18px;
     font-family: 'Kdam Thmor Pro', sans-serif;
     cursor: pointer;
+    color: #f2f2f2;
 }
 
 .hidro__container{
@@ -159,11 +160,12 @@ body{
 .texto__container ul li{
     list-style: none;
     margin: 20px 0px;
+    color: #f2f2f2;
 }
 
 .fa-solid{
     margin-right: 5px;
-    color: rgb(40, 97, 7);
+    color: rgb(16, 237, 127);
 }
 
 .download{
@@ -199,13 +201,13 @@ body{
     width: 50%;
     height: 100%;
     position: relative;
+    border-radius: 4px;
     overflow: hidden;
-    border-radius: 3px;
 }
 
 .ios img{
     width: 100%;
-    height: 100%;
+    height: 95%;
 }
 
 .ios a{
@@ -224,7 +226,8 @@ body{
         width: 90%;
     }
     .container h1{
-        margin-top: 90px;
+        margin-top: 150px;
+        margin-bottom: 80px;
     }
     .atras{
         font-size: 13px;
@@ -238,6 +241,7 @@ body{
         align-items: center;
         justify-content: center;
         gap: 10px;
+
     }
     .texto__container{
         align-items: center;
